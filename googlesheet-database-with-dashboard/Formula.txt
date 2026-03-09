@@ -1,0 +1,13 @@
+=TEXTJOIN(" ", TRUE,
+  IF(D2<>"", D2 & ".", ""),
+  IF(E2<>"", E2 & ".", ""),
+  IF(H2<>"", IF(H2=1, "1 Bedroom.", H2 & " Bedrooms."), ""),
+  IF(I2<>"", IF(I2=1, "1 Bathroom.", I2 & " Bathrooms."), ""),
+  IF(N2<>"", N2 & " ac.", ""),
+  IF(M2<>"", M2 & ".", ""),
+  IF(F2<>"", "ARV. " & TEXT(F2, "$#,##0.00."), ""),
+  IF(G2<>"", G2 & ".", ""),
+  IF(Q2="not available","",IF(Q2<>"", Q2 & ".", "")),
+  IF(J2<>"", "Sold " & TEXT(J2, "mmmm yyyy") & ".", ""),
+  IF(K2<>"", TEXT(K2, "$#,##0.00."), "")
+)
