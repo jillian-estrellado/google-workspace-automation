@@ -1,0 +1,1 @@
+This code gets a list of google docs files from a parent directory in google drive and compares it to previously generated list in the sheet to make sure there are no duplicates. The code returns a number of information including: titles, links, immediate directory name, etc.
